@@ -22,7 +22,7 @@ app.post("/keepa", async (req, res) => {
     }
 
     try {
-        const url = `https://api.keepa.com/product?key=${KEEPA_API_KEY}&domain=${domainId}&asin=${asin}&stats=180&history=1`;
+        const url = `const url = `https://api.keepa.com/product?key=${KEEPA_API_KEY}&domain=${domainId}&asin=${asin}&stats=180&history=1`;
 
         console.log("Consultando Keepa:", asin, "Domain:", domainId);
 
@@ -46,4 +46,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`🔥 Keepa Agent ejecutándose en puerto ${PORT}`);
 });
-
